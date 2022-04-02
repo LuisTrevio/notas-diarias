@@ -1,0 +1,165 @@
+/*IMPORT*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Nunito Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+
+    scroll-behavior: smooth;
+}
+
+*,::after, ::before {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+br {
+    user-select: none;
+}
+
+body {
+    overflow-x: hidden;
+    font-smooth: antialiased;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    background: var(--bg);
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+button {
+    border: none;
+}
+
+body {
+        --shadow-color: 0deg 0% 63%;
+    --shadow-elevation-low:
+      0.3px 0px 0.3px hsl(var(--shadow-color) / 0.34),
+      0.6px 0px 0.7px -1.2px hsl(var(--shadow-color) / 0.34),
+      1.3px 0px 1.5px -2.5px hsl(var(--shadow-color) / 0.34);
+    --shadow-elevation-medium:
+      0.3px 0px 0.3px hsl(var(--shadow-color) / 0.36),
+      1.1px 0px 1.2px -0.8px hsl(var(--shadow-color) / 0.36),
+      2.8px 0px 3.1px -1.7px hsl(var(--shadow-color) / 0.36),
+      6.7px 0px 7.5px -2.5px hsl(var(--shadow-color) / 0.36);  
+}
+
+body {
+    --Blue: rgb(255, 255, 255);
+    --BlueHover: rgb(221, 221, 221);
+    --bg: #fff;
+    --text: rgb(12, 12, 12);
+
+    --link: rgb(34, 77, 158);
+    --linkHover: rgb(46, 103, 207);
+
+    --button: rgb(10, 10, 10);
+    --selector: rgba(119, 119, 119, 0.308);
+
+    --hover: rgba(70, 70, 70, 0.24);
+    --active: rgba(70, 70, 70, 0.616);
+}
+
+.scroll-disable {
+    overflow: hidden;
+}
+
+.dark-mode {
+    --Blue: rgb(32, 32, 32);
+    --BlueHover: rgb(56, 56, 56);
+    --bg: rgb(12, 12, 12);
+    --text: rgb(202, 202, 202);
+
+    --link: rgb(124, 124, 124);
+    --linkHover: rgb(199, 199, 199);
+
+    --button: rgb(255, 255, 255);
+    --selector: rgba(119, 119, 119, 0.308);
+
+      --shadow-color: 0deg 0% 63%;
+    --shadow-elevation-low:
+    0.3px 0px 0.3px hsl(var(--shadow-color) / 0.36),
+    1.1px 0px 1.2px -0.8px hsl(var(--shadow-color) / 0.36),
+    2.8px 0px 3.1px -1.7px hsl(var(--shadow-color) / 0.36),
+    6.7px 0px 7.5px -2.5px hsl(var(--shadow-color) / 0.36); 
+    --shadow-elevation-medium:
+    0.3px 0px 0.3px hsl(var(--shadow-color) / 0.34),
+    0.6px 0px 0.7px -1.2px hsl(var(--shadow-color) / 0.34),
+    1.3px 0px 1.5px -2.5px hsl(var(--shadow-color) / 0.34); 
+}
+
+@media (prefers-color-scheme: dark) {
+    
+    body {
+    --Blue: rgb(32, 32, 32);
+    --BlueHover: rgb(56, 56, 56);
+    --bg: rgb(12, 12, 12);
+    --text: rgb(202, 202, 202);
+
+    --link: rgb(124, 124, 124);
+    --linkHover: rgb(199, 199, 199);
+
+    --button: rgb(255, 255, 255);
+    --selector: rgba(119, 119, 119, 0.308);
+
+      --shadow-color: 0deg 0% 63%;
+    --shadow-elevation-low:
+    0.3px 0px 0.3px hsl(var(--shadow-color) / 0.36),
+    1.1px 0px 1.2px -0.8px hsl(var(--shadow-color) / 0.36),
+    2.8px 0px 3.1px -1.7px hsl(var(--shadow-color) / 0.36),
+    6.7px 0px 7.5px -2.5px hsl(var(--shadow-color) / 0.36); 
+    --shadow-elevation-medium:
+    0.3px 0px 0.3px hsl(var(--shadow-color) / 0.34),
+    0.6px 0px 0.7px -1.2px hsl(var(--shadow-color) / 0.34),
+    1.3px 0px 1.5px -2.5px hsl(var(--shadow-color) / 0.34); 
+    }
+    
+    .dark-mode {
+        --Blue: rgb(255, 255, 255);
+        --BlueHover: rgb(221, 221, 221);
+        --bg: #fff;
+        --text: rgb(12, 12, 12);
+
+        --link: rgb(34, 77, 158);
+        --linkHover: rgb(46, 103, 207);
+
+        --button: rgb(10, 10, 10);
+        --selector: rgba(119, 119, 119, 0.308);
+
+        --hover: rgba(70, 70, 70, 0.24);
+        --active: rgba(70, 70, 70, 0.616);
+    
+        --shadow-color: 0deg 0% 63%;
+        --shadow-elevation-low:
+        0.3px 0px 0.3px hsl(var(--shadow-color) / 0.34),
+        0.6px 0px 0.7px -1.2px hsl(var(--shadow-color) / 0.34),
+        1.3px 0px 1.5px -2.5px hsl(var(--shadow-color) / 0.34);
+        --shadow-elevation-medium:
+        0.3px 0px 0.3px hsl(var(--shadow-color) / 0.36),
+        1.1px 0px 1.2px -0.8px hsl(var(--shadow-color) / 0.36),
+        2.8px 0px 3.1px -1.7px hsl(var(--shadow-color) / 0.36),
+        6.7px 0px 7.5px -2.5px hsl(var(--shadow-color) / 0.36);  
+    }
+    
+}
+
+::selection {
+  background: var(--selector);  
+}
+
+@media (max-width:780px) {
+
+}
